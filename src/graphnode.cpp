@@ -8,13 +8,9 @@ GraphNode::GraphNode(int id)
 
 GraphNode::~GraphNode()
 {
-    //// STUDENT CODE
-    ////
-
-    //delete _chatBot; 
-
-    ////
-    //// EOF STUDENT CODE
+    /*
+        memory is allocated in MoveChatbotHere() function and deallocated in MoveChatbotToNewNode() function
+    */
 }
 
 void GraphNode::AddToken(std::string token)
