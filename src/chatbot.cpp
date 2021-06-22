@@ -46,7 +46,7 @@ ChatBot::~ChatBot()
     Copy Constructor
     @input: ChatBot object
 */
-ChatBot::ChatBot(const Chatbot &chatbot_src)
+ChatBot::ChatBot(const ChatBot &chatbot_src)
 {
     _image = new wxBitmap(*chatbot_src._image);
     _chatLogic = chatbot_src._chatLogic;
