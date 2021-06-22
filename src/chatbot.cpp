@@ -61,10 +61,10 @@ ChatBot &ChatBot::operator=(const ChatBot &chatbot_src)
 {
     if (this == &chatbot_src) return *this;
 
-    delete this._image;
-    this._image = new wxBitmap(*chatbot_src._image);
-    this._chatLogic = chatbot_src._chatLogic;
-    this._rootNode = chatbot_src._rootNode;
+    delete _image;
+    _image = new wxBitmap(*chatbot_src._image);
+    _chatLogic = chatbot_src._chatLogic;
+    _rootNode = chatbot_src._rootNode;
 
     return *this;
 }
@@ -92,7 +92,7 @@ ChatBot &ChatBot::operator=(ChatBot &&chatbot_src)
 {
     if (this == &chatbot_src) return *this;
 
-    delete this._image;
+    delete _image;
     _image = new wxBitmap(*chatbot_src._image);
     _chatLogic = chatbot_src._chatLogic;
     _rootNode = chatbot_src._rootNode;
