@@ -57,7 +57,7 @@ ChatBot::ChatBot(const ChatBot &chatbot_src)
     Copy Assignment Constructor
     @input: ChatBot object
 */
-ChatBot::ChatBot &operator=(const ChatBot &chatbot_src)
+ChatBot &ChatBot::operator=(const ChatBot &chatbot_src)
 {
     if (this == &chatbot_src) return *this;
 
@@ -88,7 +88,7 @@ ChatBot::ChatBot(ChatBot &&chatbot_src)
     Move Assignment Constructor
     @input: ChatBot object (rvalue)
 */
-ChatBot::ChatBot &operator=(ChatBot &&chatbot_src)
+ChatBot &ChatBot::operator=(ChatBot &&chatbot_src)
 {
     if (this == &chatbot_src) return *this;
 
